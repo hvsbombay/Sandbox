@@ -1,14 +1,10 @@
-# Sandbox
-Overview
-Physics Sandbox is a browser-based application designed to simulate physical interactions between geometric shapes using the Matter.js physics engine. The project provides an interactive environment where users can add, manipulate, and observe various shapes under realistic physics conditions.
+# Physics Sandbox
 
-Features
-Add multiple geometric shapes, including circles, boxes, rectangles, triangles, and pentagons.
+## Overview
+**Physics Sandbox** is a browser-based application that simulates physical interactions between geometric shapes using the Matter.js physics engine. Users can add, manipulate, and observe various shapes in a realistic physics environment.
 
-Real-time drag-and-drop functionality for user interaction with objects.
-
-Physics simulation with gravity, collision, and restitution effects.
-
-Instantaneous canvas reset functionality.
-
-Responsive design with a modern, dark-themed interface.
+## Features
+- Add geometric shapes: circles, boxes, rectangles, triangles, pentagons
+- Drag-and-drop interaction and dynamic physics simulation (gravity, collision)
+- Canvas reset button to clear objects
+- Responsive, modern dark-themed UI (TailwindCSS + custom CSS)
