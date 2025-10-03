@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Matter.js modules
     const { Engine, Render, Runner, World, Bodies, Mouse, MouseConstraint, Composite } = Matter;
 
     const container = document.getElementById('sandbox-container');
@@ -9,8 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Create engine
     const engine = Engine.create();
     const world = engine.world;
-    world.gravity.y = 1; // Standard gravity
-
+    world.gravity.y = 1; 
     // Create renderer
     const render = Render.create({
         element: container,
@@ -19,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             width: canvasWidth,
             height: canvasHeight,
             wireframes: false, // Render shapes with fill colors
-            background: '#1f2937' // A slightly lighter dark for the canvas
+            background: '#1f2937' 
         }
     });
 
@@ -56,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         constraint: {
             stiffness: 0.2,
             render: {
-                visible: false // Don't show the constraint line
+                visible: false 
             }
         }
     });
@@ -65,8 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Keep the mouse in sync with rendering
     render.mouse = mouse;
 
-    // --- UI Event Listeners ---
-
+    
     document.getElementById('add-circle').addEventListener('click', () => {
         const x = Math.random() * (canvasWidth - 80) + 40;
         const radius = Math.random() * 20 + 20;
@@ -156,6 +153,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('resize', handleResize);
     
-    // Initial setup for size
     handleResize();
 });
+
