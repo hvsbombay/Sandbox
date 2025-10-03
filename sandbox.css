@@ -1,7 +1,7 @@
 body {
     font-family: 'Inter', sans-serif;
-    overflow: hidden; /* Prevents scrollbars from appearing */
-    background-color: #111827; /* Dark background */
+    overflow: hidden; 
+    background-color: #111827; 
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -20,3 +20,4 @@ canvas {
     height: 100%;
     background-color: #f3f4f6;
 }
+
